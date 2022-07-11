@@ -13,15 +13,17 @@
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
     <!-- Google Fonts -->
-
+    <script src="js/type.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@633;700&family=Josefin+Sans&family=Lato:wght@900&family=Yanone+Kaffeesatz&display=swap");
     </style>
     <style></style>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Welcome!</title>
   </head>
   <body style="background-color: #ffffff">
+
     <div>
       <nav>
         <ul
@@ -101,13 +103,17 @@
       <div class="container">
         <div class="flex-container">
           <div class="justify-content-center">
-            <div class="name">Hello, I'm Arjun Waththegedara</div>
+            <div id="typed-strings"><p>Hello, I'm Arjun Waththegedara</p></div>
+             <div class="name">
+              <span  id="typed"></span>
+             </div>
 
             <div class="myposition">
               & I'm currently a Software Engineering Undergraduate.<br />
               <!--The
               Founder of SyntCode.-->
             </div>
+           
             <hr style="width: 100%; color: #777777; size: 30" />
             <div>
               <img
@@ -326,6 +332,13 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+<Script>
+  var typed = new Typed('#typed',{
+                    stringsElement: '#typed-strings',
+                    backSpeed: 80,
+                    typeSpeed: 80
+                  });
+</Script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
