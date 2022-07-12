@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/nav.css" rel="stylesheet" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -24,13 +25,17 @@
   </head>
   <body style="background-color: #ffffff">
 
-    <div>
-      <nav>
+    <div  style="  overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;max-width: 100%; z-index:1000;">
+      <nav >
         <ul
           class="nav nav-pills justify-content-center"
-          style="background-color: #0d2917"
+          style="background-color: #0d2917;"
         >
-          <li class="nav-item my-3">
+          <li class="nav-item nav-item-sm my-3">
             <a class="nav-link active" aria-current="page" href="#">About Me</a>
           </li>
           <li class="nav-item my-3">
@@ -40,7 +45,7 @@
             <a class="nav-link" href="#Education">Education</a>
           </li>
           <li class="nav-item my-3">
-            <a class="nav-link" href="#">My Skills</a>
+            <a class="nav-link" href="#Exposure">Exposure</a>
           </li>
           <li class="nav-item my-3">
             <a class="nav-link" href="#">Projects</a>
@@ -50,7 +55,11 @@
           </li>
         </ul>
       </nav>
-      <nav>
+
+    </div>
+
+    <div class="content">
+       <nav>
         <ul
           class="nav nav-pills justify-content-center"
           style="background-color: #c0c0c0"
@@ -97,176 +106,177 @@
           </li>
         </ul>
       </nav>
-    </div>
-
-    <div class="sections">
-      <div class="container">
-        <div class="flex-container">
-          <div class="justify-content-center">
-            <div id="typed-strings"><p>Hello, I'm Arjun Waththegedara</p></div>
-             <div class="name">
-              <span  id="typed"></span>
-             </div>
-
-            <div class="myposition">
-              & I'm currently a Software Engineering Undergraduate.<br />
-              <!--The
-              Founder of SyntCode.-->
+    
+      <div class="sections">
+        <div class="container">
+          <div class="flex-container">
+            <div class="justify-content-center">
+              <div id="typed-strings"><p>Hello, I'm Arjun Uthpala</p></div>
+               <div class="name">
+                <span  id="typed"></span>
+               </div>
+  
+              <div class="myposition">
+                & I'm currently a Software Engineering Undergraduate.<br />
+                <!--The
+                Founder of SyntCode.-->
+              </div>
+             
+              <hr style="width: 100%; color: #777777; size: 30" />
+              <div>
+                <img
+                  class="image-round slideanim"
+                  src="./images/hero2.jpg"
+                  alt="Profile pic"
+                  style="
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 50%;
+                    padding: 1rem;
+                  "
+                />
+              </div>
+              <div class="describe">
+                <div class="biodata" >
+                  <p class="slideanim" style="color: #c0c0c0; text-align: center">
+                    Age : 22 <br />Location : Kurunegala, Sri Lanka <br />Email :
+                    uthpala.arjun.8367@gmail.com <br />Contact : +94718855719
+                  </p>
+                  <hr class="slideanim" style="width: 100%; color: #777777; size: 30" />
+                  <p class="slideanim" style="color: #c0c0c0">
+                    I've always been a brilliant problem solver, an innovative
+                    visionary, a team player, and a technophile fascinated with
+                    cutting-edge technology. I'm familiar with a diverse range of
+                    programming languages, including Python, C#, Java, JavaScript,
+                    HTML, CSS, and PHP, as well as SQL, but I'm still learning &
+                    adding new things to my repertoire. In my spare time, I manage
+                    a YouTube channel aimed at encouraging young people to get
+                    interested in information technology.
+                  </p>
+                </div>
+              </div>
             </div>
-           
-            <hr style="width: 100%; color: #777777; size: 30" />
-            <div>
-              <img
-                class="image-round"
-                src="./images/hero2.jpg"
-                alt="Profile pic"
-                style="
-                  display: flex;
-                  margin-left: auto;
-                  margin-right: auto;
-                  border-radius: 50%;
-                  padding: 1rem;
-                "
-              />
-            </div>
-            <div class="describe">
-              <div class="biodata" >
+          </div>
+        </div>
+      </div>
+  
+      <div class="sections " id="Experience">
+        <div class="container" >
+          <div class="flex-container">
+            <div class="myposition slideanim">Experience</div>
+          </div>
+          <div class="container" style="padding: 0%">
+            <!-- <div class="describe-experience my-2">
+              <div class="mx-2">
                 <p style="color: #c0c0c0; text-align: center">
-                  Age : 22 <br />Location : Kurunegala, Sri Lanka <br />Email :
-                  uthpala.arjun.8367@gmail.com <br />Contact : +94718855719
+                  Founder/ Web developer @ SyntCode
                 </p>
-                <hr style="width: 100%; color: #777777; size: 30" />
-                <p style="color: #c0c0c0">
-                  I've always been a brilliant problem solver, an innovative
-                  visionary, a team player, and a technophile fascinated with
-                  cutting-edge technology. I'm familiar with a diverse range of
-                  programming languages, including Python, C#, Java, JavaScript,
-                  HTML, CSS, and PHP, as well as SQL, but I'm still learning &
-                  adding new things to my repertoire. In my spare time, I manage
-                  a YouTube channel aimed at encouraging young people to get
-                  interested in information technology.
+              </div>
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  (Dec 2021 – Present)
+                </p>
+              </div>
+            </div>
+            -->
+            <div class="describe-experience my-2 slideanim">
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  Leader/ Developer @ Team Elite Devs
+                </p>
+              </div>
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  (Dec 2021 – Present)
+                </p>
+              </div>
+            </div>
+            <div class="describe-experience my-2 slideanim">
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  Content Creator @ YouTube
+                </p>
+              </div>
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  (Apr 2020 – Present)
+                </p>
+              </div>
+            </div>
+            <div class="describe-experience my-2 slideanim">
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  Software Engineering Undergraduate @ ESOFT Metro Campus
+                </p>
+              </div>
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  (Feb 2020 – Present)
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="sections" id="Experience">
-      <div class="container" >
-        <div class="flex-container">
-          <div class="myposition">Experience</div>
-        </div>
-        <div class="container" style="padding: 0%">
-          <!-- <div class="describe-experience my-2">
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                Founder/ Web developer @ SyntCode
-              </p>
-            </div>
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                (Dec 2021 – Present)
-              </p>
-            </div>
+      <div class="sections" id="Education">
+        <div class="container" >
+          <div class="flex-container">
+            <div class="myposition slideanim">Education</div>
           </div>
-          -->
-          <div class="describe-experience my-2">
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                Leader/ Developer @ Team Elite Devs
-              </p>
+          <div class="container" style="padding: 0%">
+            <div class="describe-education my-2 slideanim">
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  Bachelor of Engineering (Hons) - Top Up, Computer Software
+                  Engineering @ London Metropoliton University (Partnered with
+                  ESOFT Metro Campus)
+                </p>
+              </div>
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  (Sept 2021 – Present)
+                </p>
+              </div>
             </div>
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                (Dec 2021 – Present)
-              </p>
+            <div class="describe-education my-2 slideanim">
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  Completed Pearson BTEC HND in Computing - Level 5 (RQF),
+                  Software Engineering @ ESOFT Metro Campus
+                </p>
+              </div>
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  (Feb 2020 – Aug 2021)
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="describe-experience my-2">
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                Content Creator @ YouTube
-              </p>
-            </div>
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                (Apr 2020 – Present)
-              </p>
-            </div>
-          </div>
-          <div class="describe-experience my-2">
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                Software Engineering Undergraduate @ ESOFT Metro Campus
-              </p>
-            </div>
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                (Feb 2020 – Present)
-              </p>
+            <div class="describe-education my-2 slideanim">
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  Completed Advanced Level Examination in Physical Science (Combined Mathematics)
+                  stream @ Maliyadeva College
+                </p>
+              </div>
+              <br>
+              <div class="mx-2">
+                <p style="color: #c0c0c0; text-align: center">
+                  (Jan 2006 – Aug 2019)
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="sections" id="Education">
-      <div class="container" >
-        <div class="flex-container">
-          <div class="myposition">Education</div>
+  
+  
+       <!--   <div class="sections">
+        <div class="container" style="padding-bottom: 0%">
+          <div class="myposition">My GitHub Stats</div>
         </div>
-        <div class="container" style="padding: 0%">
-          <div class="describe-education my-2">
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                Bachelor of Engineering (Hons) - Top Up, Computer Software
-                Engineering @ London Metropoliton University (Partnered with
-                ESOFT Metro Campus)
-              </p>
-            </div>
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                (Sept 2021 – Present)
-              </p>
-            </div>
-          </div>
-          <div class="describe-education my-2">
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                Completed Pearson BTEC HND in Computing - Level 5 (RQF),
-                Software Engineering @ ESOFT Metro Campus
-              </p>
-            </div>
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                (Feb 2020 – Aug 2021)
-              </p>
-            </div>
-          </div>
-          <div class="describe-education my-2">
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                Completed Advanced Level Examination in Physical Science (Combined Mathematics)
-                stream @ Maliyadeva College
-              </p>
-            </div>
-            <br>
-            <div class="mx-2">
-              <p style="color: #c0c0c0; text-align: center">
-                (Jan 2006 – Aug 2019)
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sections">
-      <div class="container my-2" style="padding-bottom: 0%">
-        <div class="myposition">My GitHub Stats</div>
-      </div>
-      <div class="container" style="padding: 0%;">
-        <div class="github-streaks">
-          <div class="container" style="padding: 0%;">
+        <div class="container" style="width: 50%">
+          <div class="scrollchart">
             <img
               class="githubchart"
               src="http://github-readme-streak-stats.herokuapp.com?user=ArjunUthpala&theme=dark&background=000000"
@@ -274,74 +284,147 @@
             />
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="scrollchart">
-          <div class="githubmainchart" style="padding: 2%;">
-            <img
-            class="githubchart"
-            src="http://ghchart.rshah.org/315659/arjunuthpala"
-            alt="arjunuthpala's Github chart"
-          />
-          </div>
-         
-        </div>
-      </div>
-      <div class="container"  style="padding-top: 0%;">
-        <div class="github-streaks">
-          <div class="container" style="padding: 0%;">
-            <img
-            class="githubchart"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArjunUthpala&layout=compact&theme=vision-friendly-dark"
-            alt="arjunuthpala's Github chart"
-          />
+      </div>-->
+  
+      <div class="sections2" id="Exposure">
+        <div class="container" style="padding-bottom: 0%">
+          <div class="myposition slideanim" style="padding-bottom: 15px;">
+            Exposure
           </div>
         </div>
-      </div>
-    </div>
+        <div class="slideanim" style="padding: 1rem">
+          <div class="grid "  style="padding-top: 5px;">
+            <div class="grid-item">
+              <img class="mid" src="icons/bootstrap_48px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/javascript_logo_100px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/php_logo_100px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/flutter_100px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/java_96px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/c_sharp_logo_2_96px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/python_96px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/mysql_logo_50px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/microsoft_sql_server_96px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/firebase_96px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+            <div class="grid-item">
+              <img class="mid" src="icons/figma_96px.png" alt="Bootstrap" width="50" height="50" >
+            </div>
+          </div>
+        </div>
+        <div class="container ">
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 pb-5 pt-1 p-2">
 
- <!--   <div class="sections">
-      <div class="container" style="padding-bottom: 0%">
-        <div class="myposition">My GitHub Stats</div>
-      </div>
-      <div class="container" style="width: 50%">
-        <div class="scrollchart">
-          <img
-            class="githubchart"
-            src="http://github-readme-streak-stats.herokuapp.com?user=ArjunUthpala&theme=dark&background=000000"
-            alt="arjunuthpala's Github chart"
-          />
+            <div class="col slideanim">
+              <div class="card card-cover  h-100 overflow-hidden text-white bg-secondary rounded-lg shadow-lg zoom" style="background-image: url('images/win-app.jpg');  border-radius: 10px;">
+                <div class="d-flex flex-column h-100 pt-5 pb-3 text-white text-shadow-1">
+                  <div class="my-4 pt-3" style="background-color: black;">
+                    <h2 class=" display-12 lh-2 myposition" style="font-family: epilogue; color: white;">Windows Application Development</h2>
+                  </div>
+                  <div class="container">
+                    <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      View projects <i class="fas fa-arrow-alt-circle-right"></i>
+                    </button>
+                  </div>         
+                </div>
+              </div>
+            </div>
+
+            <div class="col slideanim">
+              <div class="card card-cover  h-100 overflow-hidden text-white bg-secondary rounded-lg shadow-lg zoom" style="background-image: url('images/web-app.jpg');  border-radius: 10px;">
+                <div class="d-flex flex-column h-100 pt-5 pb-3 text-white text-shadow-1">
+                  <div class="container">
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      View projects <i class="fas fa-arrow-alt-circle-right"></i>
+                    </button>
+                  </div> 
+                  <div class="my-4 pt-3" style="background-color: black;">
+                    <h2 class=" display-12 lh-2 myposition" style="font-family: epilogue; color: white;">Web Application Development</h2>
+                  </div>         
+                </div>
+              </div>
+            </div>
+
+            <div class="col slideanim">
+              <div class="card card-cover  h-100 overflow-hidden text-white bg-secondary rounded-lg shadow-lg zoom" style="background-image: url('images/mob-app.jpg');  border-radius: 10px;">
+                <div class="d-flex flex-column h-100 pt-5 pb-3 text-white text-shadow-1">
+                  <div class="my-4 pt-3" style="background-color: black;">
+                    <h2 class=" display-12 lh-2 myposition" style="font-family: epilogue; color: white;">Mobile Application Development</h2>
+                  </div> 
+                  <div class="container">
+                    <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      View projects <i class="fas fa-arrow-alt-circle-right"></i>
+                    </button>
+                  </div>         
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="sections">
-      <div class="container" style="padding-bottom: 0%">
-        <div class="myposition">
-          My Most Used Languages according to Github Repos
+      <div class="sections">
+        <div class="container my-2" style="padding-bottom: 0%">
+          <div class="myposition slideanim">My GitHub Stats  <img src="icons/github_64px.png" alt="Bootstrap" width="50" height="50" ></i></div>
+        </div>
+        <div class="container slideanim" style="padding: 0%;">
+          <div class="github-streaks">
+            <div class="container" style="padding: 0%;">
+              <img
+                class="githubchart"
+                src="http://github-readme-streak-stats.herokuapp.com?user=ArjunUthpala&theme=dark&background=000000"
+                alt="arjunuthpala's Github chart"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container slideanim">
+          <div class="scrollchart">
+            <div class="githubmainchart" style="padding: 2%;">
+              <img
+              class="githubchart"
+              src="http://ghchart.rshah.org/315659/arjunuthpala"
+              alt="arjunuthpala's Github chart"
+            />
+            </div>
+           
+          </div>
+        </div>
+        <div class="container slideanim"  style="padding-top: 0%;">
+          <div class="github-streaks">
+            <div class="container" style="padding: 0%;">
+              <img
+              class="githubchart"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArjunUthpala&layout=compact&theme=vision-friendly-dark"
+              alt="arjunuthpala's Github chart"
+            />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container" style="width: 50%">
-        <div class="scrollchart">
-          <img
-            class="githubchart"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArjunUthpala&layout=compact&theme=vision-friendly-dark"
-            alt="arjunuthpala's Github chart"
-          />
-        </div>
-      </div>
+
     </div>
 
-
-
- <div class="sections">
-      <div class="container">
-       
-      </div>
-    </div>
-
-   -->
- 
     <div>
       <footer class="py-2" style="background-color: #0d2917">
         <div class="container-fluid px-4">
@@ -366,6 +449,7 @@
                     typeSpeed: 80
                   });
 </Script>
+<script src="js/float-panel.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

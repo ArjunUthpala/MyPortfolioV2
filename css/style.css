@@ -604,6 +604,7 @@ progress {
 
 .list-unstyled {
   padding-left: 0;
+  padding-right: 0;
   list-style: none;
 }
 
@@ -4202,6 +4203,24 @@ fieldset:disabled .btn {
   border-top-right-radius: 0;
 }
 
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+
+
+
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -4210,15 +4229,7 @@ fieldset:disabled .btn {
   list-style: none;
 }
 
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: large;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
-}
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -4795,8 +4806,9 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 2px solid green;;
   border-radius: 0.25rem;
+  margin:15px;
 }
 .card > hr {
   margin-right: 0;
@@ -7703,6 +7715,28 @@ fieldset:disabled .btn {
 
 .me-auto {
   margin-right: auto !important;
+  background-color: black;
+  border: 2px solid green;
+  opacity:0.8;
+border-radius: 10%;
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+
+}
+
+
+
+.me-auto2 {
+  margin-right: auto !important;
+  background-color: white;
+ 
+  opacity:0.2;
+
+  list-style-type: none;
+  margin: 2%;
+  padding: 5%;
+
 }
 
 .mb-0 {
@@ -11781,6 +11815,21 @@ div.name {
   margin: 1rem;
 }
 
+.sections2 {
+
+
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: rgb(0, 0, 0);
+  height: fit-content;
+  /*animation-name: reverse;
+  animation-duration: 0.25s;*/
+  border-radius: 25px;
+
+  margin: 1rem;
+}
+
 .sections:hover {
   /* background-color: black;
   color: white; */
@@ -11814,6 +11863,71 @@ div.name {
   text-justify: inter-word;
 }
 
+
+
+.grid-item {
+  background-color: dodgerblue;
+  color: white;
+ 
+  height: 4rem;
+width: 4rem;
+padding-top: 0.25rem;
+  background-color: black;
+  border: 2px solid green;
+  opacity:0.8;
+border-radius: 10%;
+  list-style-type: none;
+ 
+}
+
+
+@media (min-width: 1080px) {
+  .grid-item {
+    background-color: dodgerblue;
+    color: white;
+ padding-top: 0.75rem;
+    height: 5rem;
+  width: 5rem;
+  transition: transform .2s;
+    background-color: black;
+    border: 2px solid green;
+    opacity:0.8;
+  border-radius: 10%;
+    list-style-type: none;
+  }
+}
+
+.grid-item:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  opacity: 1;
+}
+
+.zoom{
+  transition: transform .3s;
+  opacity: 0.85;
+}
+
+
+.grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}
+
+.mid{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+
 .describe-experience {
   padding-top: 1rem;
   display: flex;
@@ -11827,6 +11941,23 @@ div.name {
   border-width: thin;
   border-radius: 5px;
   width: 80%;
+}
+
+.describe-experience:hover {
+  padding-top: 1rem;
+  display: flex;
+  font-family: "Poppins";
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  border:#deb41d;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  width: 80%; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  font-weight: bold;
+
 }
 
 .describe-education {
@@ -11843,3 +11974,97 @@ div.name {
   border-radius: 5px;
   width: 80%;
 }
+
+.describe-education:hover {
+  padding-top: 1rem;
+  display: flex;
+  font-family: "Poppins";
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  border:#deb41d;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 80%; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.slideanim {
+  visibility:hidden;
+  visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+  visibility: visible;                  
+  animation: slide 1s;
+}
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(50%);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  } 
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: large;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+@media (max-width: 550px) {
+  .nav-link {
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: small;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+  }
+  
+  .content{
+    width: 100%;
+    max-width: 100%;
+      margin-top: 150px;
+      
+    }
+}
+
+
+@media (max-width: 550px) {
+ 
+  
+  .content{
+    width: 100%;
+    max-width: 100%;
+      margin-top: 120px;
+      
+    }
+}
+
+@media (min-width: 550px) {
+ 
+  
+  .content{
+    width: 100%;
+    max-width: 100%;
+      margin-top: 75px;
+      
+    }
+}
+
