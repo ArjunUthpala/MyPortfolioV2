@@ -11799,6 +11799,10 @@ div.name {
   }
 }*/
 
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 .sections {
   display: flex;
   flex-direction: column;
